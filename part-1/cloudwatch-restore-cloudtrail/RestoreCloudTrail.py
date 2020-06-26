@@ -46,7 +46,7 @@ do nothing otherwise restore CloudTrail to
 a known good state based on a number of assumptions.
 """
 def lambda_handler(event, context):
-    print event
+    print(event)
     """Strip trail Amazon ARN from Event"""
     trailArn = event['detail']['requestParameters']['name']
 
